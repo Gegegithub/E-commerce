@@ -47,5 +47,7 @@ Thumbs.db
 # Windows system files
 nul
 
-.gitignore
+# Fichiers de déploiement (non utilisés)
+Procfile
 DEPLOYMENT.md
+runtime.txt
