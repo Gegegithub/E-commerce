@@ -46,3 +46,6 @@ Thumbs.db
 
 # Windows system files
 nul
+
+.gitignore
+DEPLOYMENT.md
