@@ -3,12 +3,37 @@
 {% block title %}Liste des Catégories{% endblock %}
 
 {% block content %}
-<h1>Catégories</h1>
-<ul>
-    {% for category in categories %}
-        <li><a href="{% url 'category_detail' category.id %}">{{ category.name }}</a></li>
-    {% endfor %}
-</ul>
+<div class="row mb-4">
+    <div class="col">
+        <h1 class="display-4 mb-4">Nos Catégories</h1>
+        <a href="{% url 'product_list' %}" class="btn btn-outline-primary mb-4">
+            <i class="fas fa-box me-2"></i>Voir tous les produits
+        </a>
+    </div>
+</div>
 
-<a href="{% url 'product_list' %}">Voir les produits</a>
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+    {% for category in categories %}
+    <div class="col">
+        <div class="category-card">
+            <div class="category-icon">
+                <i class="fas fa-boxes"></i>
+            </div>
+            <h3 class="mb-3">{{ category.name }}</h3>
+            {% if category.description %}
+                <p class="text-muted mb-3">{{ category.description|truncatewords:15 }}</p>
+            {% endif %}
+            <a href="{% url 'category_detail' category.id %}" class="btn btn-primary">
+                <i class="fas fa-arrow-right me-2"></i>Explorer
+            </a>
+        </div>
+    </div>
+    {% empty %}
+    <div class="col-12">
+        <div class="alert alert-info" role="alert">
+            <i class="fas fa-info-circle me-2"></i>Aucune catégorie disponible.
+        </div>
+    </div>
+    {% endfor %}
+</div>
 {% endblock %}
