@@ -2,6 +2,13 @@
 
 Un projet e-commerce simple et élégant développé avec Django, présentant des produits électroniques avec un système de catégories.
 C'est un petit projet réalisé pour tester de nouvelles choses avec le Framework
+##Apparence 
+
+<img width="1919" height="1079" alt="Image" src="https://github.com/user-attachments/assets/70583ca9-a36b-43a0-a2d5-e935aaf3fc76" />
+<img width="1919" height="1079" alt="Image" src="https://github.com/user-attachments/assets/039277b8-f7e3-45f9-8595-be8fec9aa1c5" />
+<img width="1919" height="1079" alt="Image" src="https://github.com/user-attachments/assets/5748de92-ac7c-4077-9a5c-b3f3c7d7b48c" />
+<img width="1919" height="1079" alt="Image" src="https://github.com/user-attachments/assets/4d7eaa76-ca88-4694-918f-19f5dbea0a8e" />
+<img width="1919" height="1079" alt="Image" src="https://github.com/user-attachments/assets/3120f9b1-726f-41d2-bc6f-41e1d5b02515" />
 
 ## Fonctionnalités
 
